@@ -44,9 +44,7 @@
     .color2{
       background-color: #2e2e2e;
     }
-    .footer-margin{
-      padding-bottom: 6vh;
-    }
+    
     .color1-btn:hover{
       color: #FF6623;
       background-color: #f1f1f1;
@@ -58,6 +56,11 @@
     }
     .badge-margin{
         margin-left: 60px;
+    }
+    .footer-fix{
+      position: fixed;
+      bottom: 0;
+      width: 100%;
     }
     </style>
   </head>
@@ -126,7 +129,7 @@
 
       
 
-      <footer class=" py-5 bg-dark text-light">
+      <footer class=" py-5 bg-dark text-light footer-fix">
         <div class="container">
           <div class="row  ">
       
@@ -172,7 +175,7 @@
           </div>
         </div>
       </footer>
-      <div class="color2 footer-margin">
+      <div class="color2 footer-margin footer-fix">
         <div class="container">
           <p class="color3 py-1">Copyright &copy; 2020-2022 All rights reserved.</p>
         </div>
