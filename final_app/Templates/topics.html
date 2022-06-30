@@ -99,7 +99,11 @@
             {% for topic in topics %}
             <div class="col-lg-4">
             <div class="card mt-5 mb-5" style="width: 18rem; height: 28rem;">
-              <img src="{{MEDIA_URL}}{{topic.image.url}}" class="card-img-top" alt="..." style="width: auto; height:11rem;">
+              {% if topic.name == "01 Introduction To Virtual Reality" %}
+              <img src="/data/cover_images/VR_navidezna_resnicnost.jpeg" class="card-img-top" alt="..." style="width: auto; height:11rem;">
+              {% else %}
+              <img src="/data/cover_images/img_170999__augmentedreality_bg.jpg" class="card-img-top" alt="..." style="width: auto; height:11rem;">
+              {% endif %}
               <div class="card-body">
                 <h5 class="card-title">{{topic.name}}</h5>
                 <p class="card-text">{{topic.description}}</p>
